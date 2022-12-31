@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Sprint 2</title>
+
+</head>
+<body>
+  <main class="main-container"> 
+
+    <section class="main-container_background">
+
+      <div class="card-front">
+        <img class="card-front-logo" src="./images/card-logo.svg" alt="logo">
+        <p class="card-front-num">  0000 0000 0000 0000</p>
+        <div class="card-front-info">
+          <p class="info-card-name">Jane Appleseed</p>
+          <p> <span class="info-card-month">00</span> / <span class="info-card-year">00</span></p>
+
+        </div>
+      </div>
+
+      <div class="card-back" > 
+        <p class="card-back-num" >000</p>
+      </div>
+      
+    </section>
+
+    <section class="main-container_form">
+
+      <form class="form" action="#">
+        <label class="form_label" for="cardholder">Cardholder Name</label>
+        <input class="form_input" type="text" name="cardholder" id="cardholder" placeholder="  e.g. Jane Appleseed">
+        <div class="form-input-cardholder--error style"></div>
+
+        <label class="form_label" for="cardNumber">Card Number</label>
+        <input class="form_input" type="text" name="cardNumber" id="cardNumber"   placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <div class="form-input-cardnumber--error style"></div>
+
+        <div class="form-date-container">
+          <label class="form_label" for="month">  Exp. Date (MM/YY)</label>
+          <label class="form_label" for="cvc">CVC</label>
+          <div class="form-date">
+            <input class="form_input" type="text" maxlength="2" name="month" placeholder="MM" id="month">
+            <input class="form_input" type="text" maxlength="2" name="year" placeholder="YY" id="year">
+          </div>
+          <input class="form_input" type="text" maxlength="3" name="cvc" placeholder="  e.g. 123" id="cvc">
+          <div class="form-errors">
+            <div class="form-input-mm--error style"></div>
+            <div class="form-input-yy--error style"></div>
+          </div>
+          <div class="form-input-cvc--error style"></div>
+
+        </div>
+
+        <input class="form-btn" type="submit" value="Confirm">
+
+      </form>
+      <section class="thanks-section">
+        <img class="thanks-section-img" src="./images/icon-complete.svg" alt="chechk icon">
+        <h1 class="thanks-section-title">Thank you!</h1>
+        <p class="thanks-section-text">We've added your card details</p>
+        <button class="thanks-section-btn">Continue</button>
+    
+      </section>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
